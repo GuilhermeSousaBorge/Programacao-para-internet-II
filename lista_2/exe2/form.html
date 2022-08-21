@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="index.php" method="post">
+        <p>Usuario: <input type="text" name="usuario" id=""></p>
+        <p>Senha: <input type="password" name="senha" id=""></p>
+        Sexo:
+        <p>
+            <input type="radio" id="html" name="sexo" value="Masculino">
+            <label for="html">Masculino</label><br>
+            <input type="radio" id="css" name="sexo" value="Feminino">
+            <label for="css">Feminino</label><br>
+        </p>
+        Profissao:
+        <p>
+            <input type="checkbox" id="profissao1" name="profissao[]" value="Policial">
+            <label for="profissao1"> Policial</label><br>
+            <input type="checkbox" id="profissao2" name="profissao[]" value="Desenvolvedor">
+            <label for="profissao2"> Desenvolvedor</label><br>
+            <input type="checkbox" id="profissao3" name="profissao[]" value="Motorista">
+            <label for="profissao3"> Motorista</label><br>
+            <input type="checkbox" id="profissao4" name="profissao[]" value="Cozinheiro">
+            <label for="profissao4"> Cozinheiro</label><br>
+            <input type="checkbox" id="profissao5" name="profissao[]" value="Professor">
+            <label for="profissao5"> Professor</label><br>
+            <input type="checkbox" id="profissao6" name="profissao[]" value="Auxiliar">
+            <label for="profissao6"> Auxiliar</label><br>
+        </p>
+        <p>Cidade: <input type="text" name="cidade" id=""></p>
+        <p>Estado:
+            <label for="estados"></label>
+            <select name="estado" id="estados">
+                <option value="MG">Minas Gerais</option>
+                <option value="SP">Sao Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="BA">Bahia</option>
+                <option value="GO">Goias</option>
+                <option value="vazio">Nenhum dos acima</option>
+            </select>
+        </p>
+        <p><label for="desc">Descriçao:</label></p>
+        <textarea id="desc" name="descricao" rows="4" cols="50"></textarea>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
